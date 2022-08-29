@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+.rating-state {
+  background-color: hsl(213, 19%, 18%);
+
+  max-width: 335px;
+  min-height: 350px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.rating-state .step1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step1 .star {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.step1 .sfg {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.question {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.rating-state .step1 p {
+  width: 100%;
+  margin: 0;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+nav span {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  user-select: none;
+}
+nav span:hover {
+  background-color: hsla(217, 12%, 63%);
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn.submit {
+  user-select: none;
+
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn.submit:active {
+  background-color: white;
+
+  color: hsl(25, 97%, 53%);
+}
+nav span.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.rating-state .step2 {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.thanks-svg {
+  padding-top: 10px;
+}
+.rating-state .step2 .selected {
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+  font-size: 14px;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+.rating-state .step2 .question {
+  position: relative;
+  top: 10px;
+}
+
+.rating-state .step2 p {
+  width: 100%;
+  margin: 0;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.8px;
+}
+@media (max-width: 375px) {
+  .rating-state .step2 p {
+    width: 90%;
+  }
+}
