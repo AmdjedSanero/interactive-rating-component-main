@@ -8,11 +8,11 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: hsl(216, 12%, 8%);
+  height: 100vh;
 }
 .rating-state {
   background-color: hsl(213, 19%, 18%);
@@ -133,4 +133,18 @@ nav span.active {
   .rating-state .step2 p {
     width: 90%;
   }
+}
+.attribution {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  background-color: hsl(216, 12%, 8%);
+  color: orange;
+}
+.attribution:hover {
+  background-color: hsla(217, 12%, 63%, 0.1);
+}
+.attribution a {
+  color: white;
 }
