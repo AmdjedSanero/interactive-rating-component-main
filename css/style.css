@@ -88,6 +88,9 @@ nav span:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+.btn.submit:hover {
+  background-color: darkorange;
+}
 .btn.submit:active {
   background-color: white;
 
